@@ -50,7 +50,7 @@ export default {
     async addUsuario() {
       try {
         const response = await axios.post(
-          "http://localhost:3000/usuarios",
+          "https://api-de-usuarios.vercel.app/usuarios",
           this.novoUsuario
         );
        

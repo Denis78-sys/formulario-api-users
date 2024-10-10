@@ -17,7 +17,7 @@ export const mutations = {
 export const actions = {
   async buscarDados({ commit }) {
     try {
-      const response = await axios.get('http://localhost:3000/usuarios'); // Chamada à API
+      const response = await axios.get('https://api-de-usuarios.vercel.app/usuarios'); // Chamada à API
       commit('SET_USUARIOS', response.data); // Atualiza o estado com os dados recebidos
     } catch (error) {
       console.error('Erro ao buscar dados:', error);
