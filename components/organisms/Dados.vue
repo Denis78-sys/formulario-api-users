@@ -37,7 +37,7 @@ export default {
     ...mapActions(["buscarDados"]),
     async deleteUser(id) {
       try {
-        await axios.delete(`https://api-de-usuarios.vercel.app/usuarios/${id}`);
+        await this.$axios.delete(`/usuarios/${id}`);
         //alert("Usuário deletado com sucesso!");
         await this.buscarDados();
       } catch (error) {

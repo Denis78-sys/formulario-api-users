@@ -49,8 +49,8 @@ export default {
     ...mapActions(['buscarDados']),
     async addUsuario() {
       try {
-        const response = await axios.post(
-          "https://api-de-usuarios.vercel.app/usuarios",
+        const response = await this.$axios.post(
+          "/usuarios",
           this.novoUsuario
         );
        
